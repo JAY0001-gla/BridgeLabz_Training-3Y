@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog Layout</title>
+<style>
+body {margin:0;font-family:sans-serif;}
+.grid {
+  display:grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns:200px 1fr;
+  gap:10px;
+}
+header {grid-area:header;background:#ccc;padding:10px;}
+.sidebar {grid-area:sidebar;background:#eee;padding:10px;}
+.main {grid-area:main;display:flex;gap:10px;}
+.post {flex:1;background:#ddd;padding:10px;}
+footer {grid-area:footer;text-align:center;background:#ccc;padding:10px;}
+@media(max-width:800px){
+  .grid {
+    grid-template-areas:
+      "header header"
+      "main main"
+      "sidebar sidebar"
+      "footer footer";
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+<body>
+<div class="grid">
+  <header>My Blog</header>
+  <div class="sidebar">Categories</div>
+  <div class="main">
+    <div class="post">Blog Post 1</div>
+    <div class="post">Blog Post 2</div>
+  </div>
+  <footer>Contact: jay@example.com</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pricing</title>
+<style>
+body {margin:0;font-family:sans-serif;}
+.pricing {display:flex;gap:20px;justify-content:center;padding:20px;}
+.card {flex:1;padding:20px;background:#eee;transition:0.3s;animation:fadein 1s;}
+.card:hover {transform:translateY(-10px);}
+.highlight {flex:1.2;background:#ddd;}
+@keyframes fadein {from{opacity:0;}to{opacity:1;}}
+@media(max-width:750px){.pricing{flex-direction:column;}}
+</style>
+</head>
+<body>
+<div class="pricing">
+  <div class="card">Basic - $10</div>
+  <div class="card highlight">Pro - $20</div>
+  <div class="card">Premium - $30</div>
+</div>
+</body>
+</html>

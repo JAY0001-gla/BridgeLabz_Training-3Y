@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<style>
+body {margin:0;font-family:sans-serif;}
+.grid {display:grid;grid-template-columns:200px 1fr 1fr;grid-gap:10px;}
+header {grid-column:1/4;background:#ccc;padding:10px;}
+.sidebar {background:#eee;padding:10px;}
+.main {display:grid;grid-template-columns:1fr 1fr;grid-gap:10px;}
+.box {background:#ddd;padding:20px;transition:0.3s;}
+.box:hover {transform:scale(1.05);box-shadow:0 0 10px #000;}
+.wide {grid-column:span 2;}
+</style>
+</head>
+<body>
+<div class="grid">
+  <header>Dashboard Header</header>
+  <div class="sidebar">Sidebar Navigation</div>
+  <div class="main">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box wide">Wide Box (spans 2 columns)</div>
+    <div class="box">Box 4</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Photo Gallery</title>
+<style>
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+  padding:20px;
+}
+figure {margin:0;}
+img {
+  width:100%;height:auto;display:block;
+  transition:transform 0.5s ease;
+}
+img:hover {transform:scale(1.05);}
+figcaption {text-align:center;padding:5px;}
+</style>
+</head>
+<body>
+<div class="gallery">
+  <figure>
+    <img src="photo1.jpg" alt="Photo 1">
+    <figcaption>Caption 1</figcaption>
+  </figure>
+  <figure>
+    <img src="photo2.jpg" alt="Photo 2">
+    <figcaption>Caption 2</figcaption>
+  </figure>
+  <figure>
+    <img src="photo3.jpg" alt="Photo 3">
+    <figcaption>Caption 3</figcaption>
+  </figure>
+</div>
+</body>
+</html>
