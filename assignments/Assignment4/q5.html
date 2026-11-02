@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q5 - Movie Ticket Booking</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .field { margin-bottom: 15px; }
+  label { display: block; margin-bottom: 4px; }
+  input { padding: 6px; width: 260px; border: 2px solid #ccc; }
+  input.valid { border-color: green; }
+  input.invalid { border-color: red; }
+  .error { color: red; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>Q5: Movie Ticket Booking</h1>
+<form id="bookingForm" novalidate>
+  <div class="field">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <div class="error" id="nameError"></div>
+  </div>
+  <div class="field">
+    <label for="email">Email</label>
+    <input type="text" id="email">
+    <div class="error" id="emailError"></div>
+  </div>
+  <div class="field">
+    <label for="seats">Seats (1 to 10)</label>
+    <input type="text" id="seats">
+    <div class="error" id="seatsError"></div>
+  </div>
+  <button type="submit">Book Ticket</button>
+</form>
+<p>Ticket details are printed in the browser console (F12).</p>
+<script src="q5.js"></script>
+</body>
+</html>
