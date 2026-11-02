@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q6 - Product Card Fetcher</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+  h1 { text-align: center; }
+  #productContainer { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  .product-card { background: #fff; padding: 12px; border-radius: 8px; text-align: center; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
+  .product-card img { height: 140px; max-width: 100%; object-fit: contain; }
+  .product-card h3 { font-size: 14px; }
+  .product-card p { color: #007a5a; font-weight: bold; }
+  #errorMessage { color: red; text-align: center; }
+</style>
+</head>
+<body>
+<h1>Fake Store - Product Dashboard</h1>
+<p id="errorMessage"></p>
+<div id="productContainer"></div>
+<p>Product details are also printed in the browser console (F12).</p>
+<script src="q6.js"></script>
+</body>
+</html>
