@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q6 - Real-Time Table Filter</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  #searchBox { padding: 8px; width: 280px; margin-bottom: 15px; }
+  table { border-collapse: collapse; width: 480px; }
+  th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+  th { background: #eeeeee; }
+  #noResults { display: none; color: #c62828; font-weight: bold; text-align: center; }
+</style>
+</head>
+<body>
+<h1>Q6: Student Table Filter</h1>
+<input type="text" id="searchBox" placeholder="Search by name, branch or CGPA">
+<table id="studentTable">
+  <thead>
+    <tr><th>Name</th><th>Branch</th><th>CGPA</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Aarav Sharma</td><td>Computer Science</td><td>8.9</td></tr>
+    <tr><td>Diya Patel</td><td>Electronics</td><td>9.2</td></tr>
+    <tr><td>Rohan Verma</td><td>Mechanical</td><td>7.8</td></tr>
+    <tr><td>Sneha Gupta</td><td>Computer Science</td><td>9.0</td></tr>
+    <tr><td>Kabir Singh</td><td>Civil</td><td>8.1</td></tr>
+    <tr><td>Meera Nair</td><td>Electronics</td><td>8.6</td></tr>
+    <tr><td>Arjun Mehta</td><td>Mechanical</td><td>7.5</td></tr>
+    <tr><td>Priya Iyer</td><td>Information Technology</td><td>9.4</td></tr>
+    <tr id="noResults"><td colspan="3">No results found</td></tr>
+  </tbody>
+</table>
+<p>Match counts are also printed in the browser console (F12).</p>
+<script src="q6.js"></script>
+</body>
+</html>

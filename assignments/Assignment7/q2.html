@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q2 - Live Character Counter</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  textarea { width: 360px; height: 120px; padding: 8px; }
+  #counter { margin: 8px 0; font-weight: bold; padding: 4px 8px; display: inline-block; border-radius: 4px; background: #e8f5e9; color: #2e7d32; }
+  #counter.warning { background: #fff176; color: #5d4037; }
+  #counter.danger { background: #e53935; color: #fff; }
+</style>
+</head>
+<body>
+<h1>Q2: Live Character Counter</h1>
+<textarea id="messageBox" placeholder="Type here (max 100 characters)"></textarea>
+<div><span id="counter">100 characters left</span></div>
+<button id="resetButton">Reset</button>
+<p>Counter status is also printed in the browser console (F12).</p>
+<script src="q2.js"></script>
+</body>
+</html>

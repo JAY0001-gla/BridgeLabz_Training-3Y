@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q8 - Custom Dropdown</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  #dropdown { position: relative; display: inline-block; }
+  #dropdownButton { width: 200px; padding: 8px 12px; text-align: left; cursor: pointer; background: #fff; border: 1px solid #888; }
+  #dropdownList { display: none; position: absolute; top: 100%; left: 0; width: 200px; margin: 0; padding: 0; list-style: none; background: #fff; border: 1px solid #888; border-top: none; z-index: 10; }
+  #dropdownList.open { display: block; }
+  #dropdownList li { padding: 8px 12px; cursor: pointer; }
+  #dropdownList li:hover { background: #e3f2fd; }
+</style>
+</head>
+<body>
+<h1>Q8: Custom Dropdown</h1>
+<div id="dropdown">
+  <button id="dropdownButton" type="button">Select a language</button>
+  <ul id="dropdownList">
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Java</li>
+    <li>C++</li>
+    <li>Go</li>
+  </ul>
+</div>
+<p>Selections are also printed in the browser console (F12).</p>
+<script src="q8.js"></script>
+</body>
+</html>

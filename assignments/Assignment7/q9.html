@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q9 - Form Submit Blocker</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .field { margin-bottom: 15px; }
+  label { display: block; margin-bottom: 4px; }
+  input { padding: 6px; width: 260px; border: 2px solid #ccc; }
+  input.invalid { border-color: red; }
+  .error { color: red; font-size: 13px; min-height: 18px; }
+  #successMessage { display: none; color: #2e7d32; font-weight: bold; margin-top: 15px; }
+</style>
+</head>
+<body>
+<h1>Q9: Form Submit Blocker</h1>
+<form id="signupForm" novalidate>
+  <div class="field">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <div class="error" id="nameError"></div>
+  </div>
+  <div class="field">
+    <label for="email">Email</label>
+    <input type="text" id="email">
+    <div class="error" id="emailError"></div>
+  </div>
+  <div class="field">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <div class="error" id="passwordError"></div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+<div id="successMessage">Form Submitted Successfully</div>
+<p>Results are also printed in the browser console (F12).</p>
+<script src="q9.js"></script>
+</body>
+</html>

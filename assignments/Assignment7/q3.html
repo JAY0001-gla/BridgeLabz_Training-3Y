@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q3 - Multi-Step Form</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .step { display: none; margin-bottom: 15px; }
+  .step.active { display: block; }
+  label { display: block; margin-bottom: 4px; }
+  input { padding: 6px; width: 260px; border: 2px solid #ccc; }
+  input.invalid { border-color: red; }
+  .error { color: red; font-size: 13px; min-height: 18px; }
+  #stepIndicator { font-weight: bold; margin-bottom: 10px; }
+  #summary { display: none; border: 1px solid #4caf50; padding: 12px; max-width: 360px; background: #f1f8e9; }
+</style>
+</head>
+<body>
+<h1>Q3: Multi-Step Form</h1>
+<form id="multiStepForm" novalidate>
+  <div id="stepIndicator">Step 1 of 3</div>
+  <div class="step active">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <div class="error" id="nameError"></div>
+  </div>
+  <div class="step">
+    <label for="email">Email</label>
+    <input type="text" id="email">
+    <div class="error" id="emailError"></div>
+  </div>
+  <div class="step">
+    <label for="password">Password (min 6 characters)</label>
+    <input type="password" id="password">
+    <div class="error" id="passwordError"></div>
+  </div>
+  <button type="button" id="backButton">Back</button>
+  <button type="submit" id="nextButton">Next</button>
+</form>
+<div id="summary"></div>
+<p>Progress is also printed in the browser console (F12).</p>
+<script src="q3.js"></script>
+</body>
+</html>

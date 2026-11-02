@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q1 - Dynamic Product List Manager</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  .add-row { margin-bottom: 15px; }
+  .add-row input { padding: 6px; width: 240px; }
+  ul { list-style: none; padding: 0; max-width: 480px; }
+  li { display: flex; align-items: center; gap: 8px; padding: 8px; border: 1px solid #ccc; margin-bottom: 6px; border-radius: 4px; }
+  li.editing { border-color: #1976d2; background: #eef5ff; }
+  .product-name { flex: 1; }
+  li input.edit-input { flex: 1; padding: 4px; }
+  button { cursor: pointer; padding: 4px 10px; }
+</style>
+</head>
+<body>
+<h1>Q1: Product List Manager</h1>
+<div class="add-row">
+  <input type="text" id="productInput" placeholder="Enter product name">
+  <button id="addButton">Add</button>
+</div>
+<ul id="productList"></ul>
+<p>Actions are also printed in the browser console (F12).</p>
+<script src="q1.js"></script>
+</body>
+</html>
